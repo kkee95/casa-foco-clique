@@ -2,95 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Real Estate Design System - Neutral colors with blue accent
+All colors MUST be HSL for consistency and theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm neutral background palette */
+    --background: 28 20% 97%;
+    --foreground: 25 5% 25%;
 
+    /* Card system - subtle warm tones */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 5% 25%;
 
+    /* Interactive elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 5% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary blue accent - real estate trust color */
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 100% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm secondary grays */
+    --secondary: 30 8% 94%;
+    --secondary-foreground: 25 5% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted warm tones */
+    --muted: 30 10% 92%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent warm beige */
+    --accent: 35 25% 88%;
+    --accent-foreground: 25 5% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success and warning */
+    --success: 140 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 100% 50%;
+    --warning-foreground: 25 5% 25%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Borders and inputs - subtle warm gray */
+    --border: 30 15% 88%;
+    --input: 30 15% 92%;
+    --ring: 210 100% 45%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Real estate specific colors */
+    --property-price: 140 60% 35%;
+    --property-location: 25 8% 55%;
+    --whatsapp: 142 76% 36%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(30 10% 97%));
+    --gradient-overlay: linear-gradient(180deg, transparent, hsl(25 5% 25% / 0.8));
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Shadows with warm tones */
+    --shadow-soft: 0 2px 8px hsl(25 5% 25% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(25 5% 25% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(25 5% 25% / 0.16);
+    --shadow-glow: 0 0 24px hsl(210 100% 45% / 0.25);
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 25 8% 8%;
+    --foreground: 30 10% 92%;
+    --card: 25 8% 10%;
+    --card-foreground: 30 10% 92%;
+    --popover: 25 8% 10%;
+    --popover-foreground: 30 10% 92%;
+    --primary: 210 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 8% 15%;
+    --secondary-foreground: 30 10% 85%;
+    --muted: 25 8% 12%;
+    --muted-foreground: 30 8% 65%;
+    --accent: 25 8% 18%;
+    --accent-foreground: 30 10% 85%;
+    --border: 25 8% 18%;
+    --input: 25 8% 15%;
+    --ring: 210 100% 55%;
   }
 }
 
@@ -100,6 +101,114 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* Real Estate specific components */
+  .property-card {
+    @apply bg-card rounded-xl border border-border shadow-[var(--shadow-soft)] 
+           hover:shadow-[var(--shadow-medium)] transition-all duration-300 
+           hover:-translate-y-1 overflow-hidden;
+  }
+
+  .property-price {
+    @apply text-2xl font-bold;
+    color: hsl(var(--property-price));
+  }
+
+  .property-location {
+    @apply text-sm;
+    color: hsl(var(--property-location));
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .overlay-gradient {
+    background: var(--gradient-overlay);
+  }
+
+  /* WhatsApp floating button */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-[var(--shadow-strong)]
+           flex items-center justify-center transition-transform duration-300 hover:scale-110;
+    background-color: hsl(var(--whatsapp));
+  }
+
+  /* Image optimizations */
+  .property-image {
+    @apply w-full h-48 object-cover transition-transform duration-500 hover:scale-105;
+  }
+
+  /* Microinteractions */
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-medium)];
+  }
+
+  .button-bounce {
+    @apply transition-transform duration-200 active:scale-95;
+  }
+
+  /* Search filters */
+  .filter-pill {
+    @apply px-4 py-2 rounded-full bg-secondary text-secondary-foreground
+           border border-border hover:bg-accent hover:border-accent-foreground/20
+           transition-all duration-200 cursor-pointer select-none;
+  }
+
+  .filter-pill.active {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+
+  /* Lazy loading placeholder */
+  .image-placeholder {
+    @apply bg-muted animate-pulse flex items-center justify-center;
+  }
+}
+
+@layer utilities {
+  /* Typography scale */
+  .text-hero {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .text-property-title {
+    @apply text-xl md:text-2xl font-semibold leading-snug;
+  }
+
+  /* Spacing utilities */
+  .section-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  .section-margin {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Grid systems for property layouts */
+  .properties-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+
+  .property-details-grid {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
   }
 }
