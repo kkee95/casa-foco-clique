@@ -34,7 +34,7 @@ const PropertyDetails = () => {
   }
 
   const handleWhatsApp = () => {
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "5581993524942";
     const message = `Olá! Tenho interesse no imóvel: ${property.title} - ${property.price}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

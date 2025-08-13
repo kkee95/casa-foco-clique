@@ -24,7 +24,7 @@ export const mockProperties: Property[] = [
     id: "1",
     title: "Apartamento Moderno no Centro",
     price: "R$ 450.000",
-    location: "Centro, São Paulo - SP",
+    location: "Centro, Recife - PE",
     bedrooms: 2,
     bathrooms: 2,
     parking: 1,
@@ -59,7 +59,7 @@ Este **apartamento moderno** oferece o melhor da vida urbana com todo o conforto
     id: "2",
     title: "Casa com Jardim Vila Madalena",
     price: "R$ 850.000",
-    location: "Vila Madalena, São Paulo - SP",
+    location: "Madalena, Pernambuco - PE",
     bedrooms: 3,
     bathrooms: 3,
     parking: 2,
@@ -69,7 +69,7 @@ Este **apartamento moderno** oferece o melhor da vida urbana com todo o conforto
     description: `
 # Casa Térrea com Jardim
 
-Linda **casa térrea** em uma das regiões mais charmosas de São Paulo.
+Linda **casa térrea** em uma das regiões mais charmosas de Pernambuco.
 
 ## Destaques:
 - **3 quartos** sendo 1 suíte
@@ -91,7 +91,7 @@ A Vila Madalena é conhecida por sua **vida cultural** vibrante, com bares, rest
     id: "3",
     title: "Cobertura Luxury Itaim Bibi",
     price: "R$ 1.200.000",
-    location: "Itaim Bibi, São Paulo - SP",
+    location: "Olinda, Pernambuco - PE",
     bedrooms: 4,
     bathrooms: 4,
     parking: 3,
@@ -127,7 +127,7 @@ A Vila Madalena é conhecida por sua **vida cultural** vibrante, com bares, rest
     id: "4",
     title: "Apartamento Mobiliado Brooklin",
     price: "R$ 380.000",
-    location: "Brooklin, São Paulo - SP",
+    location: "Ipojuca, Pernambuco - PE",
     bedrooms: 1,
     bathrooms: 1,
     parking: 1,
@@ -153,7 +153,7 @@ A Vila Madalena é conhecida por sua **vida cultural** vibrante, com bares, rest
     id: "5",
     title: "Sobrado Familiar Perdizes",
     price: "R$ 720.000",
-    location: "Perdizes, São Paulo - SP",
+    location: "Prazeres, Recife - PE",
     bedrooms: 3,
     bathrooms: 3,
     parking: 2,
@@ -179,7 +179,7 @@ A Vila Madalena é conhecida por sua **vida cultural** vibrante, com bares, rest
     id: "6",
     title: "Loft Industrial Moema",
     price: "R$ 520.000",
-    location: "Moema, São Paulo - SP",
+    location: "Torre, Recife - PE",
     bedrooms: 1,
     bathrooms: 1,
     parking: 1,

@@ -141,7 +141,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Por que Escolher a CasaFoco?
+                Por que Escolher a Claudio Nascimento corretor de imóveis?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -175,7 +175,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Reconhecimento de Mercado</h3>
                     <p className="text-muted-foreground">
-                      Premiada como uma das melhores imobiliárias de São Paulo.
+                      Premiada como uma das melhores imobiliárias de Pernambuco.
                     </p>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ const Index = () => {
               <div className="aspect-square bg-muted rounded-2xl overflow-hidden">
                 <img
                   src={heroImage}
-                  alt="Sobre a CasaFoco"
+                  alt="Sobre a Claudio Nascimento corretor de imóveis"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -209,7 +209,7 @@ const Index = () => {
             <Button 
               className="hero-gradient text-white h-14 px-8 text-lg font-semibold"
               onClick={() => {
-                const phoneNumber = "5511999999999";
+                const phoneNumber = "5581993524942";
                 const message = "Olá! Gostaria de mais informações sobre os imóveis disponíveis.";
                 const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(url, '_blank');
@@ -236,7 +236,7 @@ const Index = () => {
                 <div className="w-8 h-8 hero-gradient rounded-lg flex items-center justify-center">
                   <Award className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">CasaFoco</span>
+                <span className="text-xl font-bold">Claudio Nascimento corretor de imóveis</span>
               </div>
               <p className="text-muted-foreground mb-4">
                 Sua imobiliária de confiança há mais de 15 anos. 
@@ -250,9 +250,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>(11) 99999-9999</p>
-                <p>contato@casafoco.com.br</p>
-                <p>São Paulo, SP</p>
+                <p>(81) 99352-4942</p>
+                <p>claudionascimento02@gmail.com</p>
+                <p>Recife, PE</p>
               </div>
             </div>
             
@@ -268,7 +268,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            © 2024 CasaFoco Imóveis. Todos os direitos reservados.
+            © 2024 Claudio Nascimento corretor de imóveis. Todos os direitos reservados.
           </div>
         </div>
       </footer>
